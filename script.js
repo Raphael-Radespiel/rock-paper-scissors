@@ -8,4 +8,7 @@ function computerPlay(){
   return symbolMap[Math.floor(Math.random() * 3)];
 }
 
-console.log(computerPlay());
+function humanPlay(){
+  return prompt("Please write your move: ", "");
+}
+
