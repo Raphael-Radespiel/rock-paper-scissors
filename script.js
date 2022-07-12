@@ -1,7 +1,10 @@
 let symbolMap = {
   0: "Rock",
   1: "Paper",
-  2: "Scissors"
+  2: "Scissors",
+  Rock: 0,
+  Paper: 1, 
+  Scissors: 2
 };
 
 function computerPlay(){
@@ -44,3 +47,11 @@ function playRound(playerSelection, computerSelection){
       return computerSelection + ' ' + playerSelection;
   }
 }
+
+function game(){
+  for(let i = 0; i < 5; i++){
+    console.log(playRound(humanPlay(), computerPlay()));
+  }
+}
+
+game();
