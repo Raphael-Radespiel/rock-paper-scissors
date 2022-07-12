@@ -2,9 +2,9 @@ let symbolMap = {
   0: "Rock",
   1: "Paper",
   2: "Scissors",
-  Rock: 0,
-  Paper: 1, 
-  Scissors: 2
+  ROCK: 0,
+  PAPER: 1, 
+  SCISSORS: 2
 };
 
 function computerPlay(){
@@ -12,7 +12,13 @@ function computerPlay(){
 }
 
 function humanPlay(){
-  return prompt("Please write your move: ", "");
+  let playerMove = prompt("Please write your move: ", "");
+
+  while(symbolMap[playerMove.toUpperCase()] == undefined){
+    playerMove = prompt("Sorry but your selection was invalid. Try again: ", "");
+  }
+
+  return playerMove;
 }
 
 function playRound(playerSelection, computerSelection){
