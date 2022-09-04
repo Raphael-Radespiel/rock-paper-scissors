@@ -3,9 +3,25 @@
 <head>
   <meta charset="UTF-8">
   <title>Rock-Paper-Scisors</title>
+  <link rel="stylesheet" href="style.css"> 
+  <script defer src="script.js"></script>
 </head>
 <body>
-  
-  <script src="script.js"></script>
+  <div class="display-container">
+    <div id="score">0 | 0</div>
+    <div id="outcome"></div>
+  </div>
+  <div class="animation-container">
+    <img id="human-icon" src="images/rock.svg" alt="rock">
+    <img id="computer-icon" src="images/rock.svg" alt="rock">
+  </div>
+  <div class="btn-container">
+    <div class="selection-btn" id="rock"><img src="images/rock-btn.svg"></div>
+    <div class="selection-btn" id="paper"><img src="images/paper-btn.svg"></div>
+    <div class="selection-btn" id="scissors"><img src="images/scissors-btn.svg"></div>
+  </div>
+  <audio id="win-audio" src="audio/win.wav"></audio>
+  <audio id="loose-audio" src="audio/loose.wav"></audio>
+  <audio id="down-audio" src="audio/down.wav"></audio>
 </body>
 </html>

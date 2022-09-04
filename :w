@@ -102,15 +102,11 @@ function runGameLoop(){
 
   animateHands(1000, 0, 50, 3);
   setTimeout(() => downAudio.play(), 333);
-  setTimeout(() => {
-    let cloneAudio = downAudio.cloneNode();
-    cloneAudio.play();
-  }, 666);
+  setTimeout(() => downAudio.play(), 666);
   setTimeout(() => { 
     if(outcomeElement.textContent.includes("tie")) downAudio.play();
     if(outcomeElement.textContent.includes("won")) winAudio.play();
     if(outcomeElement.textContent.includes("lost")) looseAudio.play();
-    console.log("play");
   }, 1100);
 
   setTimeout(() => {

@@ -1,0 +1,91 @@
+/* GLOBAL */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+:root{
+  --clr-primary: #FFFFFF;
+  --clr-secondary: #222222;
+  --clr-accent: #1C5D99;
+  --ff-primary: 'Roboto', sans-serif;
+}
+
+*{
+  box-sizing: content-box;
+}
+
+body{
+  background-color: var(--clr-primary);
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* DISPLAY */
+.display-container{
+  background-color: var(--clr-accent);
+  width: 100%;
+  padding: 2rem 0rem;
+}
+
+#score{
+  font-size: 3rem;
+  font-family: var(--ff-primary);
+  color: white;
+  text-align: center;
+}
+
+#outcome{
+  height: 2rem;
+  font-size: 2rem;
+  color: white;
+  font-family: var(--ff-primary);
+  text-align: center;
+}
+
+/* ANIMATION HANDS */
+.animation-container img{
+  width: auto;
+  height: 20vmin;
+}
+
+#computer-icon{
+  transform: scaleX(-1);
+}
+
+.animation-container{
+  display: flex;
+  justify-content: space-between;
+  padding-top: 6rem;
+  width: 80%;
+}
+
+/* SELECTION BUTTONS */
+.btn-container{
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding-bottom: 4rem;
+  width: 80%;
+  max-width: 30rem;
+}
+
+.selection-btn{
+  background-color: white;
+  width: 26%;
+  border-radius: 15px;
+  border: 6px solid var(--clr-secondary);
+}
+
+.selection-btn:hover{
+  cursor: pointer;
+  transform: scale(1.1);
+} 
+
+.selection-btn img{
+  width: 100%;
+  height: auto;
+}
+
